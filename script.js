@@ -52,18 +52,21 @@
         })
         $(".equip-1").click(function(){
             $(".use-item").html('<img class="item-use" src="asset/backpack.png">')
+            document.getElementById('PopupMenu1').style.display = 'none';
         })
         $(".equip-2").click(function(){
             $(".use-item").html('<img class="item-use" src="asset/key.png">')
+            document.getElementById('PopupMenu2').style.display = 'none';
         })
         $(".equip-3").click(function(){
             $(".use-item").html('<img class="item-use" src="asset/wallet.png">')
+            document.getElementById('PopupMenu3').style.display = 'none';
         })
         
     })
     function showPopup1() {
-        document.getElementById('PopupMenu2').style.display = 'none'
-        document.getElementById('PopupMenu3').style.display = 'none'
+        document.getElementById('PopupMenu2').style.display = 'none';
+        document.getElementById('PopupMenu3').style.display = 'none';
         let popupMenu = document.getElementById('PopupMenu1');
         if (popupMenu.style.display === 'none') {
             popupMenu.style.display = 'block';
@@ -72,8 +75,8 @@
         }
     }
     function showPopup2() {
-        document.getElementById('PopupMenu1').style.display = 'none'
-        document.getElementById('PopupMenu3').style.display = 'none'
+        document.getElementById('PopupMenu1').style.display = 'none';
+        document.getElementById('PopupMenu3').style.display = 'none';
         let popupMenu = document.getElementById('PopupMenu2');
         if (popupMenu.style.display === 'none') {
             popupMenu.style.display = 'block';
@@ -82,8 +85,8 @@
         }
     }
     function showPopup3() {
-        document.getElementById('PopupMenu1').style.display = 'none'
-        document.getElementById('PopupMenu2').style.display = 'none'
+        document.getElementById('PopupMenu1').style.display = 'none';
+        document.getElementById('PopupMenu2').style.display = 'none';
         let popupMenu = document.getElementById('PopupMenu3');
         if (popupMenu.style.display === 'none') {
             popupMenu.style.display = 'block';
