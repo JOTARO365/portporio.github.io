@@ -1,0 +1,10 @@
+.slide-item {
+    @keyframes move {
+    0% {
+        left:0px;
+    }
+    100% {
+        left:120px;
+    }
+}
+}
